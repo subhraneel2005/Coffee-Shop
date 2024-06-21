@@ -60,11 +60,11 @@ const MenuSection = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
       <div className="relative max-w-6xl mx-auto px-4 text-center text-white">
-        <h2 className="md:text-6xl text-yellow-500 text-4xl font-bold">Our Menu</h2>
-        <p className="text-xl mb-8">Explore our selection of delicious coffee drinks and pastries.</p>
         
         {/* Coffee Menu */}
         <div className="mt-8">
+        <h2 className="md:text-6xl text-yellow-500 text-5xl font-bold">Our Menu</h2>
+        <p className="text-xl mb-8">Explore our selection of delicious coffee drinks and pastries.</p>
           <div className="flex justify-center items-center">
           <h3 className="text-3xl mt-9 font-semibold mb-4 bg-black px-10 py-4 rounded-xl text-yellow-600 w-fit">Coffee</h3>
           </div>

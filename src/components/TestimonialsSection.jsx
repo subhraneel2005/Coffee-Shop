@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
       <div className="relative">
         <Image src={bgImage} alt="Background" layout="fill" objectFit="cover" className="opacity-30" />
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-6xl font-bold text-center mb-12 text-yellow-400">Testimonials</h2>
+          <h2 className="md:text-6xl text-5xl mt-5 font-bold text-center mb-12 text-yellow-400">Testimonials</h2>
           
           {/* Customer Reviews */}
           <div className="mb-16">

@@ -25,7 +25,7 @@ export default function Home() {
   },[])
 
   return (
-    <div className="relative select-none">
+    <div className="relative select-none overflow-hidden">
       <Navbar/>
       <HeroSection/>
       <AboutUs/>
