@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Lenis from 'lenis'
 import { useEffect } from "react";
+import MenuSection from "@/components/MenuSection";
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
       <Navbar/>
       <HeroSection/>
       <AboutUs/>
+      <MenuSection/>
     </div>
   );
 }

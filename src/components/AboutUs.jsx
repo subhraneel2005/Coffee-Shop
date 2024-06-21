@@ -19,7 +19,7 @@ const AboutUs = () => {
 //   }, []);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden p-3">
       <div className="absolute inset-0 z-0">
           <Image
             src={"/about2.png"}
@@ -33,7 +33,7 @@ const AboutUs = () => {
         <div className="text-center text-white p-4 max-w-4xl space-y-6">
           <div className="flex gap-4 justify-center items-center bg-black p-4 bg-opacity-80 shadow-lg rounded-lg">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-yellow-400 md:mt-10">Our Story</h2>
-          <CgCoffee className="text-yellow-500 mt-4" size={70}/>
+          <CgCoffee className="text-yellow-500 md:mt-4" size={70}/>
           </div>
           <div className="p-3 rounded-xl bg-black bg-opacity-70">
           <p className="text-xl md:text-2xl mb-4">Our journey began with a passion for coffee and a love for community. We strive to bring you the best coffee experience, with every cup brewed to perfection.</p>
