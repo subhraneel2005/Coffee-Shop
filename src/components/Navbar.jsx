@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,23 +9,26 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
-            <Link href="/">
-              <p className="text-xl font-bold text-yellow-300">Coffee Shop</p>
-            </Link>
+            <ScrollLink to="home" smooth={true} duration={500}>
+              <p className="text-xl font-bold text-yellow-300 cursor-pointer">Coffee Shop</p>
+            </ScrollLink>
           </div>
           <div className="hidden md:flex space-x-4">
-            <Link href="/">
+            <ScrollLink to="home" smooth={true} duration={500} className="cursor-pointer">
               <p className="text-white hover:text-gray-400 font-bold transition duration-300">Home</p>
-            </Link>
-            <Link href="/menu">
-              <p className="text-white hover:text-gray-400 font-bold transition duration-300">Menu</p>
-            </Link>
-            <Link href="/about">
-              <p className="text-white hover:text-gray-400 font-bold transition duration-300">About</p>
-            </Link>
-            <Link href="/contact">
+            </ScrollLink>
+            <ScrollLink to="aboutUs" smooth={true} duration={500} className="cursor-pointer">
+              <p className="text-white hover:text-gray-400 font-bold transition duration-300">About Us</p>
+            </ScrollLink>
+            <ScrollLink to="menu" smooth={true} duration={500} className="cursor-pointer">
+              <p className="text-white hover:text-gray-400 font-bold transition duration-300">Our Menu</p>
+            </ScrollLink>
+            <ScrollLink to="testimonials" smooth={true} duration={500} className="cursor-pointer">
+              <p className="text-white hover:text-gray-400 font-bold transition duration-300">Testimonials</p>
+            </ScrollLink>
+            <ScrollLink to="contact" smooth={true} duration={500} className="cursor-pointer">
               <p className="text-white hover:text-gray-400 font-bold transition duration-300">Contact</p>
-            </Link>
+            </ScrollLink>
           </div>
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="text-gray-100 hover:text-yellow-500 focus:outline-none">
@@ -38,18 +41,21 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="flex flex-col space-y-4 mt-4">
-            <Link href="/">
-              <p className="text-white hover:text-gray-400 font-bold transition duration-300">Home</p>
-            </Link>
-            <Link href="/menu">
-              <p className="text-white hover:text-gray-400 font-bold transition duration-300">Menu</p>
-            </Link>
-            <Link href="/about">
-              <p className="text-white hover:text-gray-400 font-bold transition duration-300">About</p>
-            </Link>
-            <Link href="/contact">
-              <p className="text-white hover:text-gray-400 font-bold transition duration-300">Contact</p>
-            </Link>
+              <ScrollLink to="home" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>
+                <p className="text-white hover:text-gray-400 font-bold transition duration-300">Home</p>
+              </ScrollLink>
+              <ScrollLink to="aboutUs" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>
+                <p className="text-white hover:text-gray-400 font-bold transition duration-300">About Us</p>
+              </ScrollLink>
+              <ScrollLink to="menu" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>
+                <p className="text-white hover:text-gray-400 font-bold transition duration-300">Our Menu</p>
+              </ScrollLink>
+              <ScrollLink to="testimonials" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>
+                <p className="text-white hover:text-gray-400 font-bold transition duration-300">Testimonials</p>
+              </ScrollLink>
+              <ScrollLink to="contact" smooth={true} duration={500} className="cursor-pointer" onClick={() => setIsOpen(false)}>
+                <p className="text-white hover:text-gray-400 font-bold transition duration-300">Contact</p>
+              </ScrollLink>
             </div>
           </div>
         )}

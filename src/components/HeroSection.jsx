@@ -19,7 +19,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden" id="home">
       <div className="absolute inset-0 z-0">
         {images.map((image, index) => (
           <Image

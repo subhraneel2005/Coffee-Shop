@@ -19,7 +19,7 @@ const AboutUs = () => {
 //   }, []);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden p-3">
+    <div className="relative min-h-screen w-full overflow-hidden p-3" id="aboutUs">
       <div className="absolute inset-0 z-0">
           <Image
             src={"/about2.png"}

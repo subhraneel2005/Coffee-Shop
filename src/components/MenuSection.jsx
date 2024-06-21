@@ -48,7 +48,7 @@ const pastryItems = [
 
 const MenuSection = () => {
   return (
-    <section id="menu" className="relative py-16 bg-gray-50">
+    <section id="menu" className="relative p-3 min-h-screen w-full bg-gray-50">
       <div className="absolute inset-0">
         <Image 
           src="/bg2.png" 
@@ -60,7 +60,7 @@ const MenuSection = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
       <div className="relative max-w-6xl mx-auto px-4 text-center text-white">
-        <h2 className="md:text-6xl text-yellow-500 text-4xl font-bold mb-4">Our Menu</h2>
+        <h2 className="md:text-6xl text-yellow-500 text-4xl font-bold">Our Menu</h2>
         <p className="text-xl mb-8">Explore our selection of delicious coffee drinks and pastries.</p>
         
         {/* Coffee Menu */}

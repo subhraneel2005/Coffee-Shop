@@ -7,6 +7,9 @@ import Image from "next/image";
 import Lenis from 'lenis'
 import { useEffect } from "react";
 import MenuSection from "@/components/MenuSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import Footer from "@/components/Footer";
+import ContactUs from "@/components/ContactUs";
 
 export default function Home() {
 
@@ -27,6 +30,9 @@ export default function Home() {
       <HeroSection/>
       <AboutUs/>
       <MenuSection/>
+      <TestimonialsSection/>
+      <ContactUs/>
+      <Footer/>
     </div>
   );
 }
