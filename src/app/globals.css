@@ -31,3 +31,31 @@ body {
     text-wrap: balance;
   }
 }
+
+/* styles/globals.css */
+/* Define scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #4A5568; /* Color of the scrollbar handle */
+  border-radius: 4px; /* Rounded corners of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2D3748; /* Darker color on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #CBD5E0; /* Color of the scrollbar track */
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: transparent; /* Hide the corner */
+}
+
